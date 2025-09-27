@@ -27,6 +27,9 @@
     --font-weight-bold: 700;
 
     --shadow: inset 0 -6px 0 -1px;
+
+    --border-small: 10px;
+    --border-big: 15px;
 }
 
 * {
@@ -84,7 +87,7 @@ body {
     height: 52px;
 
     box-shadow: var(--shadow) var(--color-shadow-tile);
-    border-radius: 10px;
+    border-radius: var(--border-small);
     background-color: var(--color-light-bcg);
     border: none;
 
@@ -106,7 +109,7 @@ body {
     background-color: var(--color-gray);
     box-shadow: var(--shadow) var(--color-gray-bcg);
     border: none;
-    border-radius: 10px;
+    border-radius: var(--border-small);
 
     transition-delay: 100ms;
 }
@@ -133,7 +136,7 @@ body {
 
     height: 140px;
     width: 140px;
-    border-radius: 15px;
+    border-radius: var(--border-big);
 
     background-color: var(--color-light-bcg);
     box-shadow: var(--shadow) var(--color-shadow-tile);
@@ -160,7 +163,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    border-radius: 15px;
+    border-radius: var(--border-big);
     min-height: 72px;
 }
 
@@ -271,7 +274,7 @@ body {
     color: var(--color-bcg);
 
     border: none;
-    border-radius: 10px;
+    border-radius: var(--border-small);
     box-shadow: var(--shadow) var(--color-gray-bcg);
 }
 
@@ -280,7 +283,7 @@ body {
     height: 52px;
 
     border: none;
-    border-radius: 10px;
+    border-radius: var(--border-small);
     box-shadow: var(--shadow) var(--color-orange-bcg);
 
     background-color: var(--color-orange);
